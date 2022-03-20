@@ -26,10 +26,26 @@ int main(){
 	
 	switch(pil){
 		case 1 : hasil=bil1+bil2;
-		operasi='+';
+			operasi='+';
+			break;
 		case 2 : hasil=bil1-bil2;
-		operasi='-';
-		break;
+			operasi='-';
+			break;
+		case 3 : hasil=bil1*bil2;
+			operasi='*';
+			break;
+		case 4 : hasil=bil1/bil2;
+			operasi='/';
+			break;
+		case 5 : hasil=bil1%bil2;
+			 operasi='%';
+			break;
+		default :
+			cout<<"Salah Masukan Operator"<<endl;
 	}
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"= "<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+	
 	getch();
 }
